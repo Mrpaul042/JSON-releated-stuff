@@ -1,0 +1,122 @@
+// JSON=>
+// 1.Human readable
+// 2.Language independent
+// 3.Open standard file format
+// 4.Key:value pair
+// 5.Stringfy object
+
+// java script object notation using loop for
+// 1. object
+// 2. array of object
+//3. object of object 
+
+//1.object
+// const obj={
+//     name: "John",
+//     empid: "E123",
+//     email: "j@gmail.com",
+//     age: "35",
+//     salary: "1000$",
+//     address: "Chennai",
+// }
+/*for(let eachelement in obj ){
+    console.log(eachelement) // using for in to find key 
+}*/
+
+// for(let eachelement in obj ){
+//     console.log(obj[eachelement]) // using for in to find value
+// }
+
+//2. array of object
+ 
+// const obj=[
+//     {
+//         name: "John",
+//         empid: "E123",
+//         email: "j@gmail.com",
+//         age: "35",
+//         salary: "1000$",
+//         address: "Chennai",
+//       },
+//       {
+//         name: "kohn",
+//         empid: "B123",
+//         email: "B@gmail.com",
+//         age: "15",
+//         salary: "2000$",
+//         address: "Delhi",
+//       },
+//       {
+//         name: "mohn",
+//         empid: "P123",
+//         email: "M@gmail.com",
+//         age: "15",
+//         salary: "7000$",
+//         address: "Mumbai",
+//       },
+//     ]
+/* for(let eachelement of obj){
+     for(let[key,value] of Object.entries(eachelement)){
+            console.log(`${key}:${value}`)
+            console.log(`${key}`)
+            console.log(`${value}`) // using for of 
+ }
+}*/
+//Esmyscript2016 or ES6
+//  Object.keys(obj).forEach(function(key,value){ // using for each
+//      console.log(obj[value])
+
+// });
+//Esmyscript2017 or ES6
+// Object.entries(obj).forEach(function(key,value){ // using for each
+//         console.log(obj[value])
+// })
+
+//3. object of object
+// var obj = {
+//     1: {
+//       name: "alam",
+//       empid: "124",
+//       email: "alam@gmail.com",
+//       age: "34",
+//       salary: "6000$",
+//     },
+//     2: {
+//       name: "plam",
+//       empid: "224",
+//       email: "plam@gmail.com",
+//       age: "34",
+//       salary: "3000$",
+//     },
+//     3: {
+//       name: "kalam",
+//       empid: "424",
+//       email: "klam@gmail.com",
+//       age: "14",
+//       salary: "2000$",
+//     },
+//     4: {
+//       name: "Talam",
+//       empid: "1124",
+//       email: "talam@gmail.com",
+//       age: "48",
+//       salary: "9000$",
+//     },
+//   };
+  // forEach loop
+
+//  Object.keys(obj).forEach(function () {
+//    console.log(obj);
+//  });
+
+// forEach is rangebased
+
+// Ecamscript2016
+// Object.keys(obj).forEach(function (key, value) {
+//   console.log(obj[value]);
+// });
+
+//  ECmascript 2017
+// Object.entries(obj).forEach(function (key, value) {
+//     console.log(obj[key]);
+//   });
